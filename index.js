@@ -1,32 +1,13 @@
 const path = require('path');
-const { exec } = require('child_process');
-const shellEscape = require('shell-escape');
-const ncp = require('ncp');
+const argv = require('minimist')(process.argv.slice(2));
+const fontFixer = require('./lib/font-fixer');
 
 const debug = require('debug');
 var log = debug('font-fixer');
 
-function apply(absPath) {
-	return new Promise((resolve, reject) => {
-		const fixedPath = `${path.dirname(absPath)}/${path.basename(absPath)}__drm-stripped${path.extname(absPath)}`;
-		ncp(absPath, fixedPath, (err) => {
-			if (err) {
-				return reject(err);
-			}
-			const args = shellEscape([
-				path.resolve(`${__dirname}/bin/allow_font_embed`),
-				fixedPath
-			]);
-			log(args);
-			exec(`${args[0]} ${args[1]}`, (err, stdout, stderr) => {
-				if (err) {
-					return reject(err);
-				}
-				resolve();
-			});
+log('CLI args:')
+log(argv);
 
-		});
-	});
+if (argv._.length) {
+	fontFixer(path.resolve(argv._[0]));
 }
-
-module.exports = apply;

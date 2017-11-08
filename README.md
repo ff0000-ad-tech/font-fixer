@@ -7,4 +7,5 @@ This package utilizes a publically available C program that removes DRM from `.t
 
 ### **Warning**: Usage of this package on fonts which you are not licensed to distribute is illegal!
 
-
+## CLI
+`npm run fix ./path/to/font/asset`
