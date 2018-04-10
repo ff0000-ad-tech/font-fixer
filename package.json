@@ -1,20 +1,20 @@
 {
-  "name": "font-fixer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "fix": "node index.js --"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ff0000-ad-tech/font-fixer.git"
-  },
-  "author": "RED Interactive Agency",
-  "license": "ISC",
-  "dependencies": {
-    "debug": "git://github.com/gmcdev/debug.git",
-    "ncp": "^2.0.0",
-    "shell-escape": "^0.2.0"
-  }
+	"name": "font-fixer",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"fix": "node index.js --"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ff0000-ad-tech/font-fixer.git"
+	},
+	"author": "RED Interactive Agency",
+	"license": "ISC",
+	"dependencies": {
+		"@ff0000-ad-tech/debug": "latest",
+		"ncp": "^2.0.0",
+		"shell-escape": "^0.2.0"
+	}
 }
