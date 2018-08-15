@@ -2,7 +2,7 @@
 
 # font-fixer
 
-This package utilizes a publically available C program that removes DRM from `.ttf` fonts. It is utilized for brand-owned fonts that need to serve in-banner.
+This package utilizes a publically available C program that removes DRM from `.ttf` fonts. It is utilized for brand-owned fonts that need to serve in-banner, in particular Internet Explorer which will refuse to load a licensed font.
 
 ## CLI Usage
 
