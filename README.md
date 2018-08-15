@@ -13,9 +13,11 @@ NOTE: Once this project is installed locally, you only need to do Step 4 to fix 
 3. `npm install`
 4. `npm run fix /path/to/font.ttf`
 
-This will yield:
+This will yield
 
 ![output](./assets/output.png)
+
+where the `font__drm-stripped.ttf` version is the browser-safe font.
 
 ## Legal Warnings
 
