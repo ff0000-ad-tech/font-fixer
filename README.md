@@ -6,7 +6,7 @@ This package utilizes a publically available C program that removes DRM from `.t
 
 ## CLI Usage
 
-NOTE: Once this project is installed locally, you only need to do Step 4 to fix your fonts:
+_NOTE_: Once this project is installed locally, you only need to do _Step 4_ to fix your fonts:
 
 1. Download & Unzip this repo
 2. `cd` into unzipped project folder
