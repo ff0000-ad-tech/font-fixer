@@ -4,10 +4,6 @@
 
 This package utilizes a publically available C program that removes DRM from `.ttf` fonts. It is utilized for brand-owned fonts that need to serve in-banner.
 
-In all cases, the font must be reduced from its full set of glyphs to only the characters that are required for that ad unit to run.
-
-Furthermore, RED Ad Tech repackages the remaining glyphs in our binary asset packer, making the compromised font essentially unusable for any other purposes.
-
 ## CLI Usage
 
 NOTE: Once this project is installed locally, you only need to do Step 4 to fix your fonts:
@@ -16,3 +12,9 @@ NOTE: Once this project is installed locally, you only need to do Step 4 to fix 
 2. `cd` into unzipped project folder
 3. `npm install`
 4. `npm run fix /path/to/font/asset.ttf`
+
+## Legal Warnings
+
+In all cases, the font must be reduced from its full set of glyphs to only the characters that are required for that ad unit to run. Use [Type Tool 3](https://old.fontlab.com/font-editor/typetool/) for this purpose.
+
+Furthermore, RED Ad Tech repackages the remaining glyphs in our binary asset packer, making the compromised font essentially unusable for any other purpose.
