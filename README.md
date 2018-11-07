@@ -24,3 +24,7 @@ where the `font__drm-stripped.ttf` version is the browser-safe font.
 In all cases, the font must be reduced from its full set of glyphs to only the characters that are required for that ad unit to run. Use [Type Tool 3](https://old.fontlab.com/font-editor/typetool/) for this purpose.
 
 Furthermore, RED Ad Tech repackages the remaining glyphs in our binary asset packer, making the compromised font essentially unusable for any other purpose.
+
+## Internet Explorer Warning
+
+IE has a limit of 31 characters for font names. If your font name exceeds 31 characters, IE will error.
